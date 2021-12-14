@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 237, 231);
+}
+
+#logo-studio-av {
+  width: 110px;
+  height: 100px;
+}
+
+#container-header {
+  display: flex;
+  justify-content: space-between ;
+  margin: 0 50px;
+  align-items: center;
+}
+
+#ul-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 300px;
+}
