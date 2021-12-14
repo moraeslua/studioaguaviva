@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
 }
 
-body {
+#header {
   background-color: rgb(241, 237, 231);
 }
 
@@ -25,4 +26,39 @@ body {
   justify-content: space-around;
   list-style: none;
   width: 300px;
+}
+
+#image-1 > img {
+  max-width: 400px;
+  max-height: 400px;
+}
+#image-1 {
+  align-self: flex-start;
+  margin: 0 50px;
+}
+
+#image-2 > img{
+  max-width: 1000px;
+  max-height: 600px;
+
+}
+
+#home {
+  background-color: rgb(241, 237, 231);
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#container-main {
+  min-height: 88vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#peças {
+  background-color: rgb(255, 255, 255);
 }
