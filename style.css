@@ -72,13 +72,44 @@
   transform: translate(-150px, 0);
 }
 
-#container-main {
+#home-container {
   min-height: 88vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#peças {
-  background-color: rgb(255, 255, 255);
+main {
+  background-color: rgb(41, 43, 29);
+  color: rgb(241, 237, 231);
+}
+
+#main-page-title > h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: xx-large;
+  font-weight: 400;
+  padding: 60px;
+}
+
+#portfolio-container {
+  min-height: 300vh;
+  display: flex;
+  justify-content: space-between ;
+  flex-wrap: wrap;
+  flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.square-images > img {
+  width: 400px;
+  height: 400px;
+}
+
+.rectangular-images > img {
+  object-fit: cover;
+  width: 400px;
+  height: 500px;
+  margin-top: 200px;
 }
