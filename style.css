@@ -113,3 +113,15 @@ main {
   height: 500px;
   margin-top: 200px;
 }
+
+#show-more-button-container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+#show-more-button-container > input {
+  height: 50px;
+  width: 180px;
+  border: none;
+}
