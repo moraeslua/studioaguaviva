@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 #header {
@@ -124,4 +125,79 @@ main {
   height: 50px;
   width: 180px;
   border: none;
+}
+
+#about {
+  background-color: rgb(241, 237, 231);
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+#about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#about-content {
+  max-width: 700px;
+  margin: 80px;
+  color:rgb(62, 63, 51);
+  font-family: 'Playfair Display', serif;
+}
+
+#about-me-image {
+  position: relative;
+  z-index: 1;
+  width: 500px;
+}
+
+#about-me-image > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+#about-me-square{
+  position: absolute;
+  min-width: 800px;
+  min-height: 800px;
+  left: -400px;
+  bottom: 70px;
+  z-index: -1;
+  background-color: rgb(209, 209, 209);
+}
+
+
+#about-me-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 60px;
+  color: rgb(41, 43, 29);
+  font-weight: 400;
+  font-size: x-large;
+}
+
+#contact {
+background-color: rgb(41, 43, 29);
+color: rgb(241, 237, 231);
+padding: 0 100px;
+}
+
+#contact-container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.container-contact-text{
+  max-width: 650px;
+}
+
+.footer-container {
+  background-color: rgb(241, 237, 231);
+  min-height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
 }
