@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-dad {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.container-one {
+  background-color: rgb(41, 43, 29);
+  width: 35vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.services-list > li {
+  margin: 0 10px;
+}
+
+.title {
+  text-align: center;
+  margin: 50px;
+}
+
+.container-panels, .container-shelves, .container-tree-of-life,
+.container-hang-plants, .container-bags, .container-mat-strap,
+.container-dream-filter, .container-curtains, .container-camera-strap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 35vw;
+  display: none;
+}
+
+.all-images {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+.square-images > img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.rectangular-images > img {
+  object-fit: cover;
+  width: 400px;
+  height: 500px;
+  margin-top: 200px;
+}
+
+.show {
+  display: block;
+}

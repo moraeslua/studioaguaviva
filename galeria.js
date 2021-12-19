@@ -1,0 +1,58 @@
+// Todos os botões //
+const panelsButton = document.querySelector('#panels');
+const shelvesButton = document.querySelector('#shelves');
+const treeOfLifeButton = document.querySelector('#tree-of-life');
+const hangPlantsButton = document.querySelector('#hang-plants');
+const bagsButton = document.querySelector('#bags');
+const matStrapButton = document.querySelector('#mat-strap');
+const dreamFilterButton = document.querySelector('#dream-filter');
+const curtainsButton = document.querySelector('#curtains');
+const cameraStrapButton = document.querySelector('#camera-strap');
+const ulServicesList = document.querySelector('.services-list');
+
+// Todos os containers //
+const containerPanels = document.querySelector('.container-panels');
+const containerShelves = document.querySelector('.container-shelves');
+const containerTreeOfLife = document.querySelector('.container-tree-of-life');
+const containerHangPlants = document.querySelector('.container-hang-plants');
+const containerBags = document.querySelector('.container-bags');
+const containerMatStrap = document.querySelector('.container-mat-strap');
+const containerDreamFilter = document.querySelector('.container-dream-filter');
+const containerCurtains = document.querySelector('.container-curtains');
+const containerCameraStrap = document.querySelector('.container-camera-strap');
+
+function showOnTheScreen (event) {
+  event.preventDefault();
+  const actualListItem = event.target;
+  const showClassOwner = document.querySelector('.show');
+  addClassShow(actualListItem, showClassOwner);
+}
+
+function addClassShow (actualTarget, classOwner) {  
+  if (classOwner) {
+    classOwner.classList.remove('show');
+    console.log(classOwner);
+  }
+  if (actualTarget === panelsButton) {
+    containerPanels.classList.add('show');
+  } else if (actualTarget === shelvesButton) {
+    containerShelves.classList.add('show');
+  } else if (actualTarget === treeOfLifeButton) {
+    containerTreeOfLife.classList.add('show');
+  } else if (actualTarget === hangPlantsButton) {
+    containerHangPlants.classList.add('show');
+  } else if (actualTarget === bagsButton) {
+    containerBags.classList.add('show');
+  } else if (actualTarget === matStrapButton) {
+    containerMatStrap.classList.add('show');
+  } else if (actualTarget === dreamFilterButton) {
+    containerDreamFilter.classList.add('show');
+  } else if (actualTarget === curtainsButton) {
+    containerCurtains.classList.add('show');
+  } else if (actualTarget === cameraStrapButton) {
+    containerCameraStrap.classList.add('show');
+  }
+}
+
+ulServicesList.addEventListener('click', showOnTheScreen);
+
