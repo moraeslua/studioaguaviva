@@ -29,6 +29,7 @@ function showOnTheScreen (event) {
 }
 
 function addClassShow (actualTarget, classOwner) {  
+  if (actualTarget.tagName === 'UL') return;
   if (classOwner) classOwner.classList.remove('show');
   const galleryTitle = document.querySelector('.gallery-title');
   
@@ -59,7 +60,7 @@ function addClassShow (actualTarget, classOwner) {
   } else if (actualTarget === cameraStrapButton) {
     containerCameraStrap.classList.add('show');
     galleryTitle.innerText = 'Camera Strap';
-  }
+  } 
 }
 
 ulServicesList.addEventListener('click', showOnTheScreen);
