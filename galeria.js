@@ -29,28 +29,36 @@ function showOnTheScreen (event) {
 }
 
 function addClassShow (actualTarget, classOwner) {  
-  if (classOwner) {
-    classOwner.classList.remove('show');
-    console.log(classOwner);
-  }
+  if (classOwner) classOwner.classList.remove('show');
+  const galleryTitle = document.querySelector('.gallery-title');
+  
   if (actualTarget === panelsButton) {
     containerPanels.classList.add('show');
+    if (galleryTitle.innerText !== 'Painéis') galleryTitle.innerText = 'Painéis';
   } else if (actualTarget === shelvesButton) {
     containerShelves.classList.add('show');
+    galleryTitle.innerText = 'Prateleiras';
   } else if (actualTarget === treeOfLifeButton) {
     containerTreeOfLife.classList.add('show');
+    galleryTitle.innerText = 'Árvores da Vida';
   } else if (actualTarget === hangPlantsButton) {
     containerHangPlants.classList.add('show');
+    galleryTitle.innerText = 'Hang Plants';
   } else if (actualTarget === bagsButton) {
     containerBags.classList.add('show');
+    galleryTitle.innerText = 'Bolsas';
   } else if (actualTarget === matStrapButton) {
     containerMatStrap.classList.add('show');
+    galleryTitle.innerText = 'Mat Strap';
   } else if (actualTarget === dreamFilterButton) {
     containerDreamFilter.classList.add('show');
+    galleryTitle.innerText = 'Filtro dos Sonhos';
   } else if (actualTarget === curtainsButton) {
     containerCurtains.classList.add('show');
+    galleryTitle.innerText = 'Cortinas';
   } else if (actualTarget === cameraStrapButton) {
     containerCameraStrap.classList.add('show');
+    galleryTitle.innerText = 'Camera Strap';
   }
 }
 
