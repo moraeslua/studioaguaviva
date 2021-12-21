@@ -126,13 +126,13 @@ main {
   cursor: pointer;
 }
 
-#show-more-button-container {
+#show-more-button-container > a {
   height: 150px;
   display: flex;
   justify-content: center;
 }
 
-#show-more-button-container > input {
+#show-more-button-container > a > input {
   height: 50px;
   width: 180px;
   border: none;
