@@ -8,7 +8,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Playfair+Display&display=swap');
   </style>
-  <script src="script.js defer"></script>
+  <script src="script.js" defer></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
   <title>Studio Água Viva</title>
@@ -55,42 +55,54 @@
           <h2>Peças</h2>
         </div>
         <div id="portfolio-container">
-          <div id="painel-yara" class="square-images">
-            <img src="fotos/paineis/painel-yara.jpg" alt="">
+          <div class="container-image">
+            <div class="square-images images">
+              <img src="fotos/paineis/painel-yara.jpg" alt="">
+            </div>
             <p>Painel Yara <br>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
-          <div id="" class="rectangular-images">
-            <img src="fotos/hang-plants/regi-e-hang-plant.jpg" alt="">
+          <div class="container-image">
+            <div class="rectangular-images images">
+              <img src="fotos/hang-plants/regi-e-hang-plant.jpg" alt="">
+            </div>
             <p>Hang Plant <br>
-            Lorem Amet magni iusto repudiandae eum iure expedita ullam.
+              Lorem Amet magni iusto repudiandae eum iure expedita ullam.
             </p>
           </div>
-          <div id="" class="square-images">
-            <img src="fotos/bolsas/bolsa-macrame.jpg" alt="">
+          <div class="container-image">
+            <div class="square-images images">
+              <img src="fotos/bolsas/bolsa-macrame.jpg" alt="">
+            </div>
             <p>Bolsa<br>
               Lorem Amet magni iusto repudiandae eum iure expedita ullam.
-              </p>
-          </div>          
-          <div id="" class="rectangular-images">
-            <img src="fotos/paineis/painel-taurina.jpg" alt="">
+            </p>   
+          </div>
+          <div class="container-image">
+            <div id="" class="rectangular-images images">
+              <img src="fotos/paineis/painel-taurina.jpg" alt="">
+            </div>
             <p>Painel Taurina <br>
               Lorem Amet magni iusto repudiandae eum iure expedita ullam.
-              </p>
+            </p>
           </div>
-          <div id="" class="square-images">
-            <img src="fotos/prateleiras/prateleira-shanti.jpg" alt="">
+          <div class="container-image">
+            <div id="" class="square-images images">
+              <img src="fotos/prateleiras/prateleira-shanti.jpg" alt="">
+            </div>
             <p>Prateleira Shanti <br>
               Lorem Amet magni iusto repudiandae eum iure expedita ullam.
-              </p>
+            </p>
           </div>
-          <div id="" class="rectangular-images">
-            <img src="fotos/arvores-da-vida/duas-arvores-da-vida.jpg" alt="">
+          <div class="container-image">
+            <div id="" class="rectangular-images images">
+              <img src="fotos/arvores-da-vida/duas-arvores-da-vida.jpg" alt="">
+            </div>
             <p>Árvore da vida - Mãe e Filha <br>
               Lorem Amet magni iusto repudiandae eum iure expedita ullam.
-              </p>
-          </div>
+            </p>
+          </div>    
         </div>
         <div id="show-more-button-container">
           <input type="button" value="Ver mais"> 
@@ -107,7 +119,12 @@
           <div id="about-me-square">
           </div>
         </div>
-
+        <section class="modal-container">
+          <ion-icon class="close-modal-button" name="close-outline"></ion-icon>
+          <div class="modal">
+            <div class='modal-content'></div>
+          </div>
+        </section>
         <div id="about-content">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero

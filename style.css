@@ -103,16 +103,27 @@ main {
   margin: 0 auto;
 }
 
-.square-images > img {
+.images {
   width: 400px;
   height: 400px;
 }
 
-.rectangular-images > img {
-  object-fit: cover;
+.images > img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.rectangular-images { 
   width: 400px;
   height: 500px;
   margin-top: 200px;
+}
+
+.rectangular-images > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 #show-more-button-container {
@@ -200,4 +211,57 @@ padding: 0 100px;
   justify-content: space-between;
   align-items: center;
   padding: 100px;
+}
+
+/* MODAL */
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+
+.modal {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.close-modal-button {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+/* ZOOM + */
+.images {
+  overflow: hidden;
+}
+
+.images img {
+  /* display: block; */
+  transition: 1.5s ease-in-out;
+}
+
+.images:hover img {
+  transform: scale(1.2);
+  /* transition: 2s ease-out;  */
+  transition: transform 2s;
 }
