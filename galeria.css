@@ -10,7 +10,8 @@
 }
 
 .container-one {
-  background-color: rgb(41, 43, 29);
+  /* background-color: rgb(41, 43, 29); */
+  background-color: rgb(4, 36, 41);
   width: 35vw;
   min-height: 100vh;
   display: flex;
