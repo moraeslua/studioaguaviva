@@ -302,7 +302,8 @@ padding: 0 9rem;
   transition: 0.4s;
 }
 
-.footer-icons ion-icon:hover {
+.footer-icons ion-icon:hover,
+.home-icons ion-icon:hover {
   transform: translateY(-8px);
   transition: 0.4s;
 }
@@ -406,13 +407,14 @@ padding: 0 9rem;
   top: 15px;
 }
 
-#home-icons {
+.home-icons {
   position: absolute;
   top: 730px;
 }
 
-#home-icons > a > ion-icon {
+.home-icons > a > ion-icon {
   margin: 10px;
   font-size: 20px;
   color: rgb(15, 36, 41);
+  transition: 0.4s;
 }
