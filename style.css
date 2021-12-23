@@ -97,12 +97,12 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
-  transform: translate(-122px, 50px);
+  transform: translate(-115px, 50px);
 }
 
 #big-text-home > p > img {
   max-width: 700px;
-  /* height: 600px; */
+  height: 600px;
   margin: -190px 0;
 }
 
@@ -115,7 +115,9 @@
 
 main {
   /* background-color: rgb(4, 36, 41); */
+  background-image: linear-gradient(180deg, rgb(4, 56, 65), rgba(4, 36, 41, 1));
   color: rgb(241, 237, 231);
+  /* #1B3D42 */
 }
 
 #main-page-title > h2 {
@@ -140,7 +142,9 @@ main {
 .images {
   width: 400px;
   height: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  /* box-shadow:
+    13px 15px 30px  rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .images > img {
@@ -165,12 +169,19 @@ main {
   height: 150px;
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 
 #show-more-button-container > a > input {
-  height: 50px;
+  height: 55px;
   width: 180px;
   border: none;
+  letter-spacing: 0.05rem;
+  border-radius: 5px;
+  background-color: rgb(253, 254, 254); 
+  /* background-color: rgb(75, 86, 93); */
+  color: rgb(4, 36, 41);
+  font-weight: bold;
 }
 
 #about {
@@ -223,22 +234,47 @@ main {
   font-size: x-large;
 }
 
+/* CONTATO */
 #contact {
 background-color: rgb(4, 36, 41);
 color: rgb(241, 237, 231);
 padding: 0 100px;
 }
 
-#contact-container {
+.container-contact-text{
+  max-width: 40vw;
   min-height: 60vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-content {
+  margin: 1.5rem 0;
+}
+
+.a {
+  margin-right: 5px;
+  font-size: 20px;
+  
+}
+
+.contact-button {
+  border: none;
+  height: 3.5rem;
+  width: 13.8rem;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
   align-items: center;
+  background-color: rgb(253, 254, 254); 
+  color: rgb(4, 36, 41);
 }
 
-.container-contact-text{
-  max-width: 650px;
-}
-
+/* FOOTER */
 .footer-container {
   background-color: rgb(241, 237, 231);
   min-height: 30vh;
@@ -273,7 +309,7 @@ padding: 0 100px;
 }
 
 .close-modal-button {
-  color: white;
+  color: rgb(253, 254, 254);
   position: absolute;
   top: 15px;
   right: 30px;
