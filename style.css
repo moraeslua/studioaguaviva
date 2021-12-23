@@ -238,7 +238,7 @@ main {
 #contact {
 background-color: rgb(4, 36, 41);
 color: rgb(241, 237, 231);
-padding: 0 100px;
+padding: 0 9rem;
 }
 
 .container-contact-text{
@@ -277,11 +277,38 @@ padding: 0 100px;
 /* FOOTER */
 .footer-container {
   background-color: rgb(241, 237, 231);
-  min-height: 30vh;
+  min-height: 20vh;
+  padding: 5rem 9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px;
+}
+
+.logo-footer {
+  width: 9rem;
+  transform: translate(-0.5rem, 2.2rem);
+}
+
+.footer-content {
+  color: rgb(4, 36, 41);
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+.footer-icons > a > ion-icon {
+  margin: 0.6rem;
+  font-size: 1.3rem;
+  color: rgb(15, 36, 41);
+  transition: 0.4s;
+}
+
+.footer-icons ion-icon:hover {
+  transform: translateY(-8px);
+  transition: 0.4s;
+}
+
+.all-rights-reseved {
+  transform: translateY(-2.190rem);
 }
 
 /* MODAL */
