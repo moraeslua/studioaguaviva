@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Playfair+Display&display=swap');
   </style>
@@ -16,8 +17,11 @@
 <body>
   <header id="header">
     <div id="container-header">
+      <div class="menu-hamburguer">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
       <nav>
-          <ul id="ul-nav">
+          <ul id="ul-nav" >
             <li><a href="#header" class="nav">Início</a></li>
             <li><a href="#portfolio" class="nav">Peças</a></li>
             <li><a href="#about" class="nav">Sobre mim</a></li>
@@ -33,11 +37,15 @@
     <section id="home" class="section">     
       <div id="home-container">
         <div id="home-content-left">
-          <img src="fotos/regi-e-free-the-nipple.jpg">
+            <div id="text-home">
+              <p>Um mergulho nas águas criativas do macramê</p>
+              <p>Por Regina Lima</p>
+          </div>
+          <img class="home-image-left" src="fotos/regi-e-free-the-nipple.jpg">
           <div class="go-to-gallery">
             <p><a href="galeria.html">Ir para Galeria</a></p>
             <a href="galeria.html"><div id="home-circle"></div></a>
-            <a id="arrow" href="galeria.html"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+            <a class="home-button-arrow" href="galeria.html"><ion-icon name="chevron-forward-outline"></ion-icon></a>
           </div>
           <div class="home-icons">
             <a href="https://www.instagram.com/studioaguaviva/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -45,16 +53,8 @@
           </div>
         </div>
         <div id="home-content-right">
-          <div id="text-home">
-            <!-- <p>Por Regina Lima</p>
-            <p>Um mergulho nas águas criativas do macramê</p> -->
-          </div>
-          <div id='big-text-home'>
-            <p><img src="fotos/logo-1.png"></p>
-          </div>
-          <div id='image-2'>
-            <img src="fotos/macrame-generico.jpg">
-          </div>
+          <img id="big-logo-home" src="fotos/logo-1.png">
+          <img id="home-image-right" src="fotos/macrame-generico.jpg">
         </div>
       </div>
     </section>   
@@ -68,7 +68,7 @@
             <div class="square-images images">
               <img src="fotos/paineis/painel-yara.jpg" alt="">
             </div>
-            <p class="subtitle-image">Painel Yara <br>
+            <p class="subtitle-image"><b>Painel Yara</b> <br>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
@@ -76,7 +76,7 @@
             <div class="rectangular-images images">
               <img src="fotos/hang-plants/regi-e-hang-plant.jpg" alt="">
             </div>
-            <p class="subtitle-image" >Hang Plant <br>
+            <p class="subtitle-image" ><b>Hang Plant</b> <br>
               Lorem Amet magni iusto repudiandae eum iure expedita ullam.
             </p>
           </div>
@@ -84,7 +84,7 @@
             <div class="square-images images">
               <img src="fotos/bolsas/bolsa-macrame.jpg" alt="">
             </div>
-            <p class="subtitle-image">Bolsa<br>
+            <p class="subtitle-image"><b>Bolsa Vazada</b><br>
               Lorem Amet magni iusto repudiandae eum iure expedita ullam.
             </p>   
           </div>
@@ -92,7 +92,7 @@
             <div id="" class="rectangular-images images">
               <img src="fotos/paineis/painel-taurina.jpg" alt="">
             </div>
-            <p class="subtitle-image">Painel Taurina <br>
+            <p class="subtitle-image"><b>Painel Taurina </b><br>
               Lorem Amet magni iusto repudiandae eum iure expedita ullam.
             </p>
           </div>
@@ -100,7 +100,7 @@
             <div id="" class="square-images images">
               <img src="fotos/prateleiras/prateleira-shanti.jpg" alt="">
             </div>
-            <p class="subtitle-image">Prateleira Shanti <br>
+            <p class="subtitle-image"><b>Prateleira Shanti</b> <br>
               Lorem Amet magni iusto repudiandae eum iure expedita ullam.
             </p>
           </div>
@@ -108,7 +108,7 @@
             <div id="" class="rectangular-images images">
               <img src="fotos/arvores-da-vida/duas-arvores-da-vida.jpg" alt="">
             </div>
-            <p class="subtitle-image">Árvore da vida - Mãe e Filha <br>
+            <p class="subtitle-image"><b>Árvore da vida - Mãe e Filha </b><br>
               Lorem Amet magni iusto repudiandae eum iure expedita ullam.
             </p>
           </div>    
@@ -120,23 +120,25 @@
         </div>
       </section>
     </main>
-    <section id="about" class="section">
-      <div id="about-me-title">
-        <h2>Sobre mim</h2>
+    <section class="modal-container">
+      <ion-icon class="close-modal-button" name="close-outline"></ion-icon>
+      <div class="modal">
+        <div class='modal-content'></div>
       </div>
+    </section>
+    <section id="about" class="section">
       <div id="about-container">
-        <div id="about-me-image">
-          <img src="fotos/imagem-sobre-mim.jpg">
-          <div id="about-me-square">
-          </div>
+        <div class="about-container-left">          
+            <div class="about-me-square">
+              <div class="about-me-image">
+                <img src="fotos/imagem-sobre-mim.jpg">
+              </div>
+            </div>           
         </div>
-        <section class="modal-container">
-          <ion-icon class="close-modal-button" name="close-outline"></ion-icon>
-          <div class="modal">
-            <div class='modal-content'></div>
+        <div id="about-container-right">
+          <div id="about-me-title">
+            <h2>Sobre mim</h2>
           </div>
-        </section>
-        <div id="about-content">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
             possimus unde tempore molestiae asperiores assumenda autem,
@@ -169,7 +171,7 @@
     <section id="contact" class="section">
       <div id="contact-container">
         <div class="container-contact-text">
-          <h2 class="contact-content">Vem encomendar o teu!</h2>
+          <h2 class="contact-content contact-title">Vem encomendar o teu!</h2>
           <p class="contact-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Architecto doloremque perspiciatis similique. Rerum at
             perspiciatis, magni qui quam ullam voluptatum sint reprehenderit,

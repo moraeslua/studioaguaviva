@@ -48,3 +48,15 @@ containerGoToGallery.addEventListener('mouseout', () => {
   circle.style.backgroundColor = 'unset';
   arrow.style.color = 'unset';
 });
+
+// MEDIA QUERY
+if (window.matchMedia("(max-width: 1025px)").matches) {
+  const portfolioSquareImages = document.querySelectorAll('.square-images');
+  const portfolioRectangularImages = document.querySelectorAll('.rectangular-images');
+  for (let image of portfolioRectangularImages) {
+    image.classList.remove('images');
+  }
+  for (let image of portfolioSquareImages) {
+    image.classList.remove('images');
+  }
+}
